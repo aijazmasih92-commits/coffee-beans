@@ -1,0 +1,663 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>The Coffee Bean &amp; Tea Leaf Pakistan — Born in California. Now in Pakistan.</title>
+  <meta name="description" content="Born in California, 1963. Now in Pakistan. Slow-roasted coffee, whole-leaf tea and the original Ice Blended — find your nearest café.">
+  <meta name="theme-color" content="#0b0705">
+  <link rel="icon" href="assets/favicon.svg" type="image/svg+xml">
+  <link rel="preload" href="assets/img/hero.webp" as="image">
+  <link rel="preload" href="assets/fonts/fraunces-latin.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel="preload" href="assets/fonts/fraunces-italic-latin.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <a class="skip" href="#main">Skip to content</a>
+  <div class="grain" aria-hidden="true"></div>
+  <div class="scroll-progress" aria-hidden="true"><span id="progressFill"></span></div>
+
+  <header class="nav" id="nav">
+    <div class="nav__inner">
+      <a class="brand" href="#top" aria-label="The Coffee Bean and Tea Leaf Pakistan — home">
+        <svg class="brand__mark" viewBox="0 0 48 48" aria-hidden="true">
+          <circle cx="24" cy="24" r="22" fill="none" stroke="currentColor" stroke-width="1.1"/>
+          <ellipse cx="24" cy="26" rx="8" ry="11.6" transform="rotate(-22 24 26)" fill="none" stroke="currentColor" stroke-width="1.1"/>
+          <path d="M18.6 34c3.7-2.7 5.3-6.3 5.2-10.6-.1-4.3 1.5-7.9 5.2-10.6" fill="none" stroke="currentColor" stroke-width="1.1"/>
+          <path d="M28.8 11.4c2.8-.4 5.1.6 6.8 2.9-2.6 1.5-5.1 1.4-7.4-.4" fill="none" stroke="currentColor" stroke-width="1.1"/>
+        </svg>
+        <span class="brand__name">
+          <span>The Coffee Bean <em>&amp; Tea Leaf</em></span>
+          <small>Pakistan</small>
+        </span>
+      </a>
+
+      <nav class="nav__links" aria-label="Primary">
+        <a href="#story">Story</a>
+        <a href="#heritage">Heritage</a>
+        <a href="#menu">Menu</a>
+        <a href="#sourcing">Sourcing</a>
+        <a href="#locations">Locations</a>
+      </nav>
+
+      <div class="nav__actions">
+        <a class="btn btn--nav" href="#locations">Find a store</a>
+        <button class="burger" id="burger" type="button" aria-label="Open menu" aria-expanded="false" aria-controls="mobileMenu">
+          <span></span><span></span>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <div class="mobile-menu" id="mobileMenu" aria-hidden="true">
+    <nav class="mobile-menu__nav" aria-label="Mobile">
+      <a href="#story"><span>01</span>Story</a>
+      <a href="#heritage"><span>02</span>Heritage</a>
+      <a href="#menu"><span>03</span>Menu</a>
+      <a href="#sourcing"><span>04</span>Sourcing</a>
+      <a href="#locations"><span>05</span>Locations</a>
+      <a href="#visit"><span>06</span>Visit</a>
+    </nav>
+    <div class="mobile-menu__foot">
+      <a href="mailto:info@coffeebean.pk">info@coffeebean.pk</a>
+      <a href="tel:+923025455448">0302 5455448</a>
+      <p>Born in California. Brewed in Pakistan.</p>
+    </div>
+  </div>
+
+  <main id="main">
+    <!-- ================= HERO ================= -->
+    <section class="hero" id="top" aria-labelledby="hero-title">
+      <div class="hero__backdrop" aria-hidden="true">
+        <div class="hero__glow"></div>
+        <div class="hero__rings">
+          <span></span><span></span><span></span>
+        </div>
+        <div class="hero__beam"></div>
+      </div>
+
+      <div class="wrap hero__inner">
+        <div class="hero__copy">
+          <p class="eyebrow hero__eyebrow"><i class="pulse"></i>California, 1963 <span aria-hidden="true">—</span> Pakistan, today</p>
+          <h1 class="hero__title" id="hero-title">
+            <span class="hero__line"><span>Born in</span></span>
+            <span class="hero__line hero__line--gold"><span><em>California.</em></span></span>
+            <span class="hero__line"><span>Now in</span></span>
+            <span class="hero__line hero__line--gold"><span><em>Pakistan.</em></span></span>
+          </h1>
+          <p class="hero__sub">Sixty years of slow-roasted craft, whole-leaf tea, and the world’s first Ice Blended — poured in cafés across Pakistan.</p>
+          <div class="hero__cta">
+            <a class="btn btn--gold" href="#locations">Find your café <span aria-hidden="true">→</span></a>
+            <a class="btn btn--ghost" href="#menu">Explore the menu</a>
+          </div>
+        </div>
+
+        <div class="hero__stage" id="heroStage" data-tilt data-tilt-max="9">
+          <div class="hero__halo" aria-hidden="true"></div>
+          <svg class="hero__orbit" viewBox="0 0 520 520" aria-hidden="true">
+            <defs>
+              <path id="orbitPath" d="M 260,260 m -206,0 a 206,206 0 1,1 412,0 a 206,206 0 1,1 -412,0"/>
+            </defs>
+            <text><textPath href="#orbitPath">THE COFFEE BEAN &amp; TEA LEAF · SINCE 1963 · CALIFORNIA · PAKISTAN · </textPath></text>
+          </svg>
+          <figure class="hero__drink">
+            <img src="assets/img/hero.webp" width="1024" height="1536" alt="An ice-blended mocha crowned with whipped cream and caramel, lit by warm gold light." fetchpriority="high">
+          </figure>
+          <img class="hero__beans" src="assets/img/floating-beans.webp" width="1024" height="1024" alt="" aria-hidden="true">
+          <div class="hero__badge">
+            <span class="hero__badge-kicker">The Original</span>
+            <span class="hero__badge-main">Ice Blended</span>
+            <span class="hero__badge-year">Est. 1987</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="wrap hero__foot">
+        <a class="scroll-cue" href="#story">
+          <span class="scroll-cue__line" aria-hidden="true"></span>
+          <span>Scroll to explore</span>
+        </a>
+        <p class="hero__foot-note">The Coffee Bean &amp; Tea Leaf <span aria-hidden="true">·</span> Pakistan</p>
+      </div>
+    </section>
+
+    <!-- ================= STORY ================= -->
+    <section class="story section section--cream" id="story" aria-labelledby="story-title">
+      <img class="story__beans story__beans--a" src="assets/img/beans-light.webp" width="1024" height="1024" alt="" aria-hidden="true" data-parallax data-speed="0.16">
+      <img class="story__beans story__beans--b" src="assets/img/beans-light.webp" width="1024" height="1024" alt="" aria-hidden="true" data-parallax data-speed="0.08">
+
+      <div class="wrap">
+        <header class="sect-head">
+          <p class="eyebrow">01 <span aria-hidden="true">—</span> Our story</p>
+          <h2 class="display" id="story-title">A cup of California,<br><em>eight thousand miles</em><br>from home.</h2>
+        </header>
+
+        <div class="story__grid">
+          <figure class="story__figure reveal">
+            <div class="story__frame">
+              <div class="media media--43">
+                <img src="assets/img/story-1963.webp" width="1536" height="1024" alt="A warm 1960s Los Angeles coffee house: brass espresso machine, marble counter and sunlight through the blinds." loading="lazy" data-parallax data-speed="0.07">
+              </div>
+              <span class="story__frame-line" aria-hidden="true"></span>
+            </div>
+            <figcaption><span>The original café</span> Los Angeles, 1963</figcaption>
+          </figure>
+
+          <div class="story__copy">
+            <p class="story__lede reveal">In 1963, Herbert B. Hyman opened a small coffee house in Los Angeles with a conviction that still runs through every cup we pour: coffee and tea deserve the same care as fine wine.</p>
+            <p class="reveal">He travelled to the source. He learned the harvests. He built a house around growers, not shelves — around patience, not speed. Sixty years later, that house has a Pakistani address. The recipes are unchanged. The patience is unchanged. Only the sky outside the window is different.</p>
+            <blockquote class="story__quote reveal">“Great coffee isn’t served. It’s grown, gathered, roasted — and then, finally, shared.”</blockquote>
+            <a class="textlink reveal" href="#heritage">Follow the story <span aria-hidden="true">↓</span></a>
+          </div>
+        </div>
+
+        <dl class="story__stats reveal">
+          <div>
+            <dt>1963</dt>
+            <dd>The first café, Los Angeles</dd>
+          </div>
+          <div>
+            <dt>8,000</dt>
+            <dd>Miles from LA to Lahore</dd>
+          </div>
+          <div>
+            <dt>100%</dt>
+            <dd>Arabica, always</dd>
+          </div>
+        </dl>
+      </div>
+    </section>
+
+    <!-- ================= TICKER ================= -->
+    <div class="ticker" aria-hidden="true">
+      <div class="ticker__track">
+        <span>Ice Blended since 1987 <i>✦</i> 100% Arabica <i>✦</i> Whole leaf tea <i>✦</i> Baked daily <i>✦</i> Los Angeles → Pakistan <i>✦</i></span>
+        <span>Ice Blended since 1987 <i>✦</i> 100% Arabica <i>✦</i> Whole leaf tea <i>✦</i> Baked daily <i>✦</i> Los Angeles → Pakistan <i>✦</i></span>
+      </div>
+    </div>
+
+    <!-- ================= HERITAGE ================= -->
+    <section class="heritage section section--dark" id="heritage" aria-labelledby="heritage-title">
+      <div class="wrap">
+        <header class="sect-head sect-head--split">
+          <div>
+            <p class="eyebrow">02 <span aria-hidden="true">—</span> Heritage</p>
+            <h2 class="display" id="heritage-title">Three moments<br>that made <em>the cup.</em></h2>
+          </div>
+          <p class="sect-head__note">A coffee house, an invention, and a homecoming — the short version of a very long love story.</p>
+        </header>
+
+        <div class="timeline-wrap">
+          <div class="timeline__rail" aria-hidden="true">
+            <span class="timeline__fill" id="timelineFill"></span>
+          </div>
+
+          <ol class="timeline">
+            <li class="tl reveal">
+              <div class="tl__year">1963</div>
+              <span class="tl__dot" aria-hidden="true"></span>
+              <article class="tl__card card3d" data-tilt data-tilt-max="6">
+                <div class="tl__media">
+                  <img src="assets/img/story-1963.webp" width="1536" height="1024" alt="The original Los Angeles coffee house interior at golden hour." loading="lazy">
+                </div>
+                <div class="tl__body">
+                  <p class="tl__kicker">The first pour</p>
+                  <p>Herbert B. Hyman opens The Coffee Bean &amp; Tea Leaf in Los Angeles, California. A small café with a very long memory.</p>
+                </div>
+              </article>
+            </li>
+
+            <li class="tl reveal">
+              <div class="tl__year">1987</div>
+              <span class="tl__dot" aria-hidden="true"></span>
+              <article class="tl__card card3d" data-tilt data-tilt-max="6">
+                <div class="tl__media">
+                  <img src="assets/img/ice-blended.webp" width="1024" height="1536" alt="A tall iced coffee blended drink with caramel swirls and a cream cap." loading="lazy">
+                </div>
+                <div class="tl__body">
+                  <p class="tl__kicker">The Ice Blended is invented</p>
+                  <p>A bartender at the café blends coffee, ice and chocolate into something the world had never tasted. The Original Ice Blended is born — and iced coffee is never the same.</p>
+                </div>
+              </article>
+            </li>
+
+            <li class="tl reveal">
+              <div class="tl__year">2017</div>
+              <span class="tl__dot" aria-hidden="true"></span>
+              <article class="tl__card card3d" data-tilt data-tilt-max="6">
+                <div class="tl__media">
+                  <img src="assets/img/interior.webp" width="1536" height="1024" alt="A warm modern café interior with walnut panelling, brass lights and a marble counter." loading="lazy">
+                </div>
+                <div class="tl__body">
+                  <p class="tl__kicker">Pakistan, meet California</p>
+                  <p>The first Pakistani café opens its doors. Lahore gets a new ritual; the country gets a new kind of coffee house.</p>
+                </div>
+              </article>
+            </li>
+
+            <li class="tl reveal">
+              <div class="tl__year">Today</div>
+              <span class="tl__dot" aria-hidden="true"></span>
+              <article class="tl__card card3d" data-tilt data-tilt-max="6">
+                <div class="tl__media">
+                  <img src="assets/img/beans-dark.webp" width="1024" height="1024" alt="Glossy dark-roasted coffee beans lit by warm gold light." loading="lazy">
+                </div>
+                <div class="tl__body">
+                  <p class="tl__kicker">Still steeping</p>
+                  <p>More than twenty cafés across seven cities — and a menu that still begins at the source.</p>
+                </div>
+              </article>
+            </li>
+          </ol>
+        </div>
+      </div>
+    </section>
+
+    <!-- ================= MENU ================= -->
+    <section class="menu section section--cream" id="menu" aria-labelledby="menu-title">
+      <div class="wrap">
+        <header class="sect-head sect-head--split">
+          <div>
+            <p class="eyebrow">03 <span aria-hidden="true">—</span> The signature collection</p>
+            <h2 class="display" id="menu-title">Four ways<br>to fall <em>in love.</em></h2>
+          </div>
+          <p class="sect-head__note">The classics that built us — and the indulgences that keep you coming back.</p>
+        </header>
+
+        <div class="menu__grid">
+          <article class="menu-card reveal">
+            <div class="menu-card__inner card3d" data-tilt data-tilt-max="7">
+              <div class="menu-card__media">
+                <img src="assets/img/ice-blended.webp" width="1024" height="1536" alt="A tall Ice Blended coffee drink with caramel swirls and a dusted cream cap." loading="lazy">
+                <span class="menu-card__num">01</span>
+                <span class="menu-card__badge">House icon</span>
+              </div>
+              <div class="menu-card__body">
+                <p class="menu-card__kicker">Ice Blended</p>
+                <h3>The Original</h3>
+                <p class="menu-card__desc">Coffee, ice and chocolate, blended until velvet. Since 1987, the drink that made a café famous.</p>
+                <ul class="notes">
+                  <li>Mocha</li><li>Caramel</li><li>Cookies &amp; Cream</li>
+                </ul>
+              </div>
+            </div>
+          </article>
+
+          <article class="menu-card reveal" style="--d:.08s">
+            <div class="menu-card__inner card3d" data-tilt data-tilt-max="7">
+              <div class="menu-card__media">
+                <img src="assets/img/coffee.webp" width="1024" height="1280" alt="A cappuccino with rosetta latte art in a dark ceramic cup, steam rising." loading="lazy">
+                <span class="menu-card__num">02</span>
+              </div>
+              <div class="menu-card__body">
+                <p class="menu-card__kicker">Coffee</p>
+                <h3>100% Arabica</h3>
+                <p class="menu-card__desc">A darker, slower roast built for milk and for mornings. Bright at the edges, deep at the finish.</p>
+                <ul class="notes">
+                  <li>Espresso</li><li>Latte</li><li>Cold Brew</li>
+                </ul>
+              </div>
+            </div>
+          </article>
+
+          <article class="menu-card reveal" style="--d:.16s">
+            <div class="menu-card__inner card3d" data-tilt data-tilt-max="7">
+              <div class="menu-card__media">
+                <img src="assets/img/tea.webp" width="1024" height="1280" alt="Amber whole-leaf tea glowing in a glass cup with mint and a brass strainer." loading="lazy">
+                <span class="menu-card__num">03</span>
+              </div>
+              <div class="menu-card__body">
+                <p class="menu-card__kicker">Tea</p>
+                <h3>Whole leaf</h3>
+                <p class="menu-card__desc">Hand-picked leaves, steeped without a bag. Floral, malty, green or bright — never dusty.</p>
+                <ul class="notes">
+                  <li>Black</li><li>Green</li><li>Oolong</li><li>Herbal</li>
+                </ul>
+              </div>
+            </div>
+          </article>
+
+          <article class="menu-card reveal" style="--d:.24s">
+            <div class="menu-card__inner card3d" data-tilt data-tilt-max="7">
+              <div class="menu-card__media">
+                <img src="assets/img/cake.webp" width="1024" height="1280" alt="A layered chocolate and salted caramel cake slice with a gold caramel shard." loading="lazy">
+                <span class="menu-card__num">04</span>
+              </div>
+              <div class="menu-card__body">
+                <p class="menu-card__kicker">Cakes</p>
+                <h3>Baked daily</h3>
+                <p class="menu-card__desc">Layered chocolate, salted caramel, cheesecake. The reason a coffee break becomes an afternoon.</p>
+                <ul class="notes">
+                  <li>Chocolate</li><li>Caramel</li><li>Cheesecake</li>
+                </ul>
+              </div>
+            </div>
+          </article>
+        </div>
+
+        <div class="menu__foot reveal">
+          <p>Ask your barista for the seasonal blend — it changes with the harvest.</p>
+          <a class="btn btn--dark" href="#locations">Find a café near you <span aria-hidden="true">→</span></a>
+        </div>
+      </div>
+    </section>
+
+    <!-- ================= SOURCING ================= -->
+    <section class="sourcing section section--dark" id="sourcing" aria-labelledby="sourcing-title">
+      <img class="sourcing__beans" src="assets/img/floating-beans.webp" width="1024" height="1024" alt="" aria-hidden="true">
+      <div class="wrap">
+        <header class="sect-head sect-head--split">
+          <div>
+            <p class="eyebrow">04 <span aria-hidden="true">—</span> Sourced, not bought</p>
+            <h2 class="display" id="sourcing-title">We go to<br>the source. <em>Always have.</em></h2>
+          </div>
+          <p class="sect-head__note">Great coffee and tea are grown, not manufactured. So we work with the people who grow them — at origin, season after season.</p>
+        </header>
+
+        <div class="origins">
+          <figure class="origin origin--coffee reveal">
+            <div class="origin__media">
+              <img src="assets/img/origin-coffee.webp" width="1536" height="1024" alt="Ripe red coffee cherries on a branch above misty highland plantations at sunrise." loading="lazy" data-parallax data-speed="0.09">
+              <span class="origin__tag">A <span aria-hidden="true">·</span> Coffee</span>
+            </div>
+            <figcaption>
+              <div class="origin__head">
+                <h3>Coffee</h3>
+                <p>100% Arabica</p>
+              </div>
+              <p class="origin__desc">Highland-grown, hand-picked at peak ripeness, then roasted in small batches for a cup that is smooth, aromatic and never bitter.</p>
+              <ul class="notes notes--dark">
+                <li>Single origin</li><li>Small batch</li><li>Hand-picked</li>
+              </ul>
+            </figcaption>
+          </figure>
+
+          <figure class="origin origin--tea reveal" style="--d:.1s">
+            <div class="origin__media">
+              <img src="assets/img/origin-tea.webp" width="1536" height="1024" alt="Terraced tea gardens at dawn, dew on the leaves and mist between the hills." loading="lazy" data-parallax data-speed="0.09">
+              <span class="origin__tag">B <span aria-hidden="true">·</span> Tea</span>
+            </div>
+            <figcaption>
+              <div class="origin__head">
+                <h3>Tea</h3>
+                <p>Whole leaf</p>
+              </div>
+              <p class="origin__desc">Leaves from estates that have perfected their craft for generations. Hand-plucked, gently dried, and blended with real fruit and botanicals.</p>
+              <ul class="notes notes--dark">
+                <li>Hand-plucked</li><li>Whole leaf</li><li>Real botanicals</li>
+              </ul>
+            </figcaption>
+          </figure>
+        </div>
+
+        <dl class="stats reveal">
+          <div>
+            <dt><span data-count="100">100</span>%</dt>
+            <dd>Arabica coffee</dd>
+          </div>
+          <div>
+            <dt>Whole</dt>
+            <dd>Leaf tea, always</dd>
+          </div>
+          <div>
+            <dt><span data-count="20">20</span>+</dt>
+            <dd>Cafés nationwide</dd>
+          </div>
+          <div>
+            <dt>1963</dt>
+            <dd>Sourcing since</dd>
+          </div>
+        </dl>
+
+        <p class="sourcing__note reveal">From the highlands to your neighbourhood — no shortcuts in between.</p>
+      </div>
+    </section>
+
+    <!-- ================= LOCATIONS ================= -->
+    <section class="locations section section--cream" id="locations" aria-labelledby="locations-title">
+      <div class="wrap">
+        <header class="sect-head sect-head--split">
+          <div>
+            <p class="eyebrow">05 <span aria-hidden="true">—</span> Find us</p>
+            <h2 class="display" id="locations-title">Your nearest <em>cup.</em></h2>
+          </div>
+          <div class="loc__meta">
+            <p>Open early, open late, open in seven cities. Every café, every hour, all in one place.</p>
+            <p class="loc__clock"><i class="pulse"></i> Live in Pakistan <span aria-hidden="true">·</span> <span id="pktClock">--:--</span> PKT</p>
+          </div>
+        </header>
+
+        <div class="loc-banner reveal">
+          <div class="media">
+            <img src="assets/img/interior.webp" width="1536" height="1024" alt="A warm café interior at night with brass pendant lights, velvet seating and a marble counter." loading="lazy" data-parallax data-speed="0.08">
+          </div>
+          <div class="loc-banner__quote">
+            <p>“Come for the coffee.<br>Stay for the afternoon.”</p>
+            <span>A café, not a counter.</span>
+          </div>
+        </div>
+
+        <div class="filters reveal" role="group" aria-label="Filter cafés by city">
+          <button class="chip is-on" type="button" data-filter="all" aria-pressed="true">All <span data-count-for="all">19</span></button>
+          <button class="chip" type="button" data-filter="lahore" aria-pressed="false">Lahore <span data-count-for="lahore">7</span></button>
+          <button class="chip" type="button" data-filter="karachi" aria-pressed="false">Karachi <span data-count-for="karachi">4</span></button>
+          <button class="chip" type="button" data-filter="islamabad" aria-pressed="false">Islamabad <span data-count-for="islamabad">4</span></button>
+          <button class="chip" type="button" data-filter="rawalpindi" aria-pressed="false">Rawalpindi <span data-count-for="rawalpindi">1</span></button>
+          <button class="chip" type="button" data-filter="faisalabad" aria-pressed="false">Faisalabad <span data-count-for="faisalabad">1</span></button>
+          <button class="chip" type="button" data-filter="gujranwala" aria-pressed="false">Gujranwala <span data-count-for="gujranwala">1</span></button>
+          <button class="chip" type="button" data-filter="sialkot" aria-pressed="false">Sialkot <span data-count-for="sialkot">1</span></button>
+        </div>
+
+        <div class="stores" id="stores">
+          <!-- Islamabad -->
+          <article class="store" data-city="islamabad" data-sched="mf:480-1500|ss:540-1500">
+            <div class="store__top"><span class="store__city">Islamabad</span><span class="store__status" data-status><i></i><span>—</span></span></div>
+            <h3 class="store__name">F-6 Markaz</h3>
+            <p class="store__hours">Mon–Fri 8 AM–1 AM <span aria-hidden="true">·</span> Sat–Sun 9 AM–1 AM</p>
+            <a class="store__link" href="https://www.google.com/maps/search/?api=1&amp;query=The%20Coffee%20Bean%20%26%20Tea%20Leaf%20F-6%20Markaz%20Islamabad%20Pakistan" target="_blank" rel="noopener">Get directions <span aria-hidden="true">↗</span></a>
+          </article>
+          <article class="store" data-city="islamabad" data-sched="mf:480-1500|ss:540-1500">
+            <div class="store__top"><span class="store__city">Islamabad</span><span class="store__status" data-status><i></i><span>—</span></span></div>
+            <h3 class="store__name">F-11 Markaz</h3>
+            <p class="store__hours">Mon–Fri 8 AM–1 AM <span aria-hidden="true">·</span> Sat–Sun 9 AM–1 AM</p>
+            <a class="store__link" href="https://www.google.com/maps/search/?api=1&amp;query=The%20Coffee%20Bean%20%26%20Tea%20Leaf%20F-11%20Markaz%20Islamabad%20Pakistan" target="_blank" rel="noopener">Get directions <span aria-hidden="true">↗</span></a>
+          </article>
+          <article class="store" data-city="islamabad" data-sched="mf:480-1500|ss:540-1500">
+            <div class="store__top"><span class="store__city">Islamabad</span><span class="store__status" data-status><i></i><span>—</span></span></div>
+            <h3 class="store__name">I-8 Markaz</h3>
+            <p class="store__hours">Mon–Fri 8 AM–1 AM <span aria-hidden="true">·</span> Sat–Sun 9 AM–1 AM</p>
+            <a class="store__link" href="https://www.google.com/maps/search/?api=1&amp;query=The%20Coffee%20Bean%20%26%20Tea%20Leaf%20I-8%20Markaz%20Islamabad%20Pakistan" target="_blank" rel="noopener">Get directions <span aria-hidden="true">↗</span></a>
+          </article>
+          <article class="store" data-city="islamabad" data-sched="mf:480-1500|ss:540-1500">
+            <div class="store__top"><span class="store__city">Islamabad</span><span class="store__status" data-status><i></i><span>—</span></span></div>
+            <h3 class="store__name">Elysium Mall</h3>
+            <p class="store__hours">Mon–Fri 8 AM–1 AM <span aria-hidden="true">·</span> Sat–Sun 9 AM–1 AM</p>
+            <a class="store__link" href="https://www.google.com/maps/search/?api=1&amp;query=The%20Coffee%20Bean%20%26%20Tea%20Leaf%20Elysium%20Mall%20Islamabad%20Pakistan" target="_blank" rel="noopener">Get directions <span aria-hidden="true">↗</span></a>
+          </article>
+
+          <!-- Rawalpindi -->
+          <article class="store" data-city="rawalpindi" data-sched="st:480-1500|fs:540-1500">
+            <div class="store__top"><span class="store__city">Rawalpindi</span><span class="store__status" data-status><i></i><span>—</span></span></div>
+            <h3 class="store__name">Bahria Town Phase 7</h3>
+            <p class="store__hours">Sun–Thu 8 AM–1 AM <span aria-hidden="true">·</span> Fri–Sat 9 AM–1 AM</p>
+            <a class="store__link" href="https://www.google.com/maps/search/?api=1&amp;query=The%20Coffee%20Bean%20%26%20Tea%20Leaf%20Bahria%20Town%20Phase%207%20Rawalpindi%20Pakistan" target="_blank" rel="noopener">Get directions <span aria-hidden="true">↗</span></a>
+          </article>
+
+          <!-- Lahore -->
+          <article class="store" data-city="lahore" data-sched="mf:480-1500|ss:540-1500">
+            <div class="store__top"><span class="store__city">Lahore</span><span class="store__status" data-status><i></i><span>—</span></span></div>
+            <h3 class="store__name">Gulberg</h3>
+            <p class="store__hours">Mon–Fri 8 AM–1 AM <span aria-hidden="true">·</span> Sat–Sun 9 AM–1 AM</p>
+            <a class="store__link" href="https://www.google.com/maps/search/?api=1&amp;query=The%20Coffee%20Bean%20%26%20Tea%20Leaf%20Gulberg%20Lahore%20Pakistan" target="_blank" rel="noopener">Get directions <span aria-hidden="true">↗</span></a>
+          </article>
+          <article class="store" data-city="lahore" data-sched="mf:480-1500|ss:540-1500">
+            <div class="store__top"><span class="store__city">Lahore</span><span class="store__status" data-status><i></i><span>—</span></span></div>
+            <h3 class="store__name">DHA Phase V</h3>
+            <p class="store__hours">Mon–Fri 8 AM–1 AM <span aria-hidden="true">·</span> Sat–Sun 9 AM–1 AM</p>
+            <a class="store__link" href="https://www.google.com/maps/search/?api=1&amp;query=The%20Coffee%20Bean%20%26%20Tea%20Leaf%20DHA%20Phase%20V%20Lahore%20Pakistan" target="_blank" rel="noopener">Get directions <span aria-hidden="true">↗</span></a>
+          </article>
+          <article class="store" data-city="lahore" data-sched="mf:480-1500|ss:540-1500">
+            <div class="store__top"><span class="store__city">Lahore</span><span class="store__status" data-status><i></i><span>—</span></span></div>
+            <h3 class="store__name">Johar Town</h3>
+            <p class="store__hours">Mon–Fri 8 AM–1 AM <span aria-hidden="true">·</span> Sat–Sun 9 AM–1 AM</p>
+            <a class="store__link" href="https://www.google.com/maps/search/?api=1&amp;query=The%20Coffee%20Bean%20%26%20Tea%20Leaf%20Johar%20Town%20Lahore%20Pakistan" target="_blank" rel="noopener">Get directions <span aria-hidden="true">↗</span></a>
+          </article>
+          <article class="store" data-city="lahore" data-sched="mf:480-1500|ss:540-1500">
+            <div class="store__top"><span class="store__city">Lahore</span><span class="store__status" data-status><i></i><span>—</span></span></div>
+            <h3 class="store__name">Thokar Niaz Baig</h3>
+            <p class="store__hours">Mon–Fri 8 AM–1 AM <span aria-hidden="true">·</span> Sat–Sun 9 AM–1 AM</p>
+            <a class="store__link" href="https://www.google.com/maps/search/?api=1&amp;query=The%20Coffee%20Bean%20%26%20Tea%20Leaf%20Thokar%20Niaz%20Baig%20Lahore%20Pakistan" target="_blank" rel="noopener">Get directions <span aria-hidden="true">↗</span></a>
+          </article>
+          <article class="store" data-city="lahore" data-sched="mt:630-1380|fs:630-1440">
+            <div class="store__top"><span class="store__city">Lahore</span><span class="store__status" data-status><i></i><span>—</span></span></div>
+            <h3 class="store__name">Packages Mall</h3>
+            <p class="store__hours">Mon–Thu 10:30 AM–11 PM <span aria-hidden="true">·</span> Fri–Sun 10:30 AM–12 AM</p>
+            <a class="store__link" href="https://www.google.com/maps/search/?api=1&amp;query=The%20Coffee%20Bean%20%26%20Tea%20Leaf%20Packages%20Mall%20Lahore%20Pakistan" target="_blank" rel="noopener">Get directions <span aria-hidden="true">↗</span></a>
+          </article>
+          <article class="store" data-city="lahore" data-sched="mf:480-1500|ss:540-1500">
+            <div class="store__top"><span class="store__city">Lahore</span><span class="store__status" data-status><i></i><span>—</span></span></div>
+            <h3 class="store__name">Downtown Hotel &amp; Residences</h3>
+            <p class="store__hours">Mon–Fri 8 AM–1 AM <span aria-hidden="true">·</span> Sat–Sun 9 AM–1 AM</p>
+            <a class="store__link" href="https://www.google.com/maps/search/?api=1&amp;query=The%20Coffee%20Bean%20%26%20Tea%20Leaf%20Downtown%20Hotel%20Lahore%20Pakistan" target="_blank" rel="noopener">Get directions <span aria-hidden="true">↗</span></a>
+          </article>
+          <article class="store" data-city="lahore" data-sched="mf:480-1500|ss:540-1500">
+            <div class="store__top"><span class="store__city">Lahore</span><span class="store__status" data-status><i></i><span>—</span></span></div>
+            <h3 class="store__name">Girja Chowk</h3>
+            <p class="store__hours">Mon–Fri 8 AM–1 AM <span aria-hidden="true">·</span> Sat–Sun 9 AM–1 AM</p>
+            <a class="store__link" href="https://www.google.com/maps/search/?api=1&amp;query=The%20Coffee%20Bean%20%26%20Tea%20Leaf%20Girja%20Chowk%20Lahore%20Pakistan" target="_blank" rel="noopener">Get directions <span aria-hidden="true">↗</span></a>
+          </article>
+
+          <!-- Karachi -->
+          <article class="store" data-city="karachi" data-sched="mf:480-1500|ss:540-1500">
+            <div class="store__top"><span class="store__city">Karachi</span><span class="store__status" data-status><i></i><span>—</span></span></div>
+            <h3 class="store__name">Marine Tower, Clifton</h3>
+            <p class="store__hours">Mon–Fri 8 AM–1 AM <span aria-hidden="true">·</span> Sat–Sun 9 AM–1 AM</p>
+            <a class="store__link" href="https://www.google.com/maps/search/?api=1&amp;query=The%20Coffee%20Bean%20%26%20Tea%20Leaf%20Marine%20Tower%20Clifton%20Karachi%20Pakistan" target="_blank" rel="noopener">Get directions <span aria-hidden="true">↗</span></a>
+          </article>
+          <article class="store" data-city="karachi" data-sched="mf:480-1500|ss:540-1500">
+            <div class="store__top"><span class="store__city">Karachi</span><span class="store__status" data-status><i></i><span>—</span></span></div>
+            <h3 class="store__name">DHA Phase 6</h3>
+            <p class="store__hours">Mon–Fri 8 AM–1 AM <span aria-hidden="true">·</span> Sat–Sun 9 AM–1 AM</p>
+            <a class="store__link" href="https://www.google.com/maps/search/?api=1&amp;query=The%20Coffee%20Bean%20%26%20Tea%20Leaf%20DHA%20Phase%206%20Karachi%20Pakistan" target="_blank" rel="noopener">Get directions <span aria-hidden="true">↗</span></a>
+          </article>
+          <article class="store" data-city="karachi" data-sched="mf:480-1500|ss:540-1500">
+            <div class="store__top"><span class="store__city">Karachi</span><span class="store__status" data-status><i></i><span>—</span></span></div>
+            <h3 class="store__name">Tipu Sultan</h3>
+            <p class="store__hours">Mon–Fri 8 AM–1 AM <span aria-hidden="true">·</span> Sat–Sun 9 AM–1 AM</p>
+            <a class="store__link" href="https://www.google.com/maps/search/?api=1&amp;query=The%20Coffee%20Bean%20%26%20Tea%20Leaf%20Tipu%20Sultan%20Karachi%20Pakistan" target="_blank" rel="noopener">Get directions <span aria-hidden="true">↗</span></a>
+          </article>
+          <article class="store" data-city="karachi" data-sched="24h">
+            <div class="store__top"><span class="store__city">Karachi</span><span class="store__status" data-status><i></i><span>—</span></span></div>
+            <h3 class="store__name">Jinnah Airport</h3>
+            <p class="store__hours">Open 24 hours <span aria-hidden="true">·</span> every day</p>
+            <a class="store__link" href="https://www.google.com/maps/search/?api=1&amp;query=The%20Coffee%20Bean%20%26%20Tea%20Leaf%20Jinnah%20Airport%20Karachi%20Pakistan" target="_blank" rel="noopener">Get directions <span aria-hidden="true">↗</span></a>
+          </article>
+
+          <!-- Faisalabad -->
+          <article class="store" data-city="faisalabad" data-sched="mf:480-1500|ss:540-1500">
+            <div class="store__top"><span class="store__city">Faisalabad</span><span class="store__status" data-status><i></i><span>—</span></span></div>
+            <h3 class="store__name">Faisalabad</h3>
+            <p class="store__hours">Mon–Fri 8 AM–1 AM <span aria-hidden="true">·</span> Sat–Sun 9 AM–1 AM</p>
+            <a class="store__link" href="https://www.google.com/maps/search/?api=1&amp;query=The%20Coffee%20Bean%20%26%20Tea%20Leaf%20Faisalabad%20Pakistan" target="_blank" rel="noopener">Get directions <span aria-hidden="true">↗</span></a>
+          </article>
+
+          <!-- Gujranwala -->
+          <article class="store" data-city="gujranwala" data-sched="all:480-1500">
+            <div class="store__top"><span class="store__city">Gujranwala</span><span class="store__status" data-status><i></i><span>—</span></span></div>
+            <h3 class="store__name">Mall of Gujranwala</h3>
+            <p class="store__hours">Open daily 8 AM–1 AM</p>
+            <a class="store__link" href="https://www.google.com/maps/search/?api=1&amp;query=The%20Coffee%20Bean%20%26%20Tea%20Leaf%20Mall%20of%20Gujranwala%20Pakistan" target="_blank" rel="noopener">Get directions <span aria-hidden="true">↗</span></a>
+          </article>
+
+          <!-- Sialkot -->
+          <article class="store" data-city="sialkot" data-sched="mf:480-1500|ss:540-1500">
+            <div class="store__top"><span class="store__city">Sialkot</span><span class="store__status" data-status><i></i><span>—</span></span></div>
+            <h3 class="store__name">Sialkot Cantonment</h3>
+            <p class="store__hours">Mon–Fri 8 AM–1 AM <span aria-hidden="true">·</span> Sat–Sun 9 AM–1 AM</p>
+            <a class="store__link" href="https://www.google.com/maps/search/?api=1&amp;query=The%20Coffee%20Bean%20%26%20Tea%20Leaf%20Sialkot%20Cantonment%20Pakistan" target="_blank" rel="noopener">Get directions <span aria-hidden="true">↗</span></a>
+          </article>
+        </div>
+
+        <p class="loc__note">Hours shown in Pakistan Standard Time. Store list and opening hours follow the official locator at <a href="https://www.coffeebean.pk/store-locator/" target="_blank" rel="noopener">coffeebean.pk</a>.</p>
+      </div>
+    </section>
+
+    <!-- ================= VISIT / CTA ================= -->
+    <section class="visit section section--dark" id="visit" aria-labelledby="visit-title">
+      <div class="visit__glow" aria-hidden="true"></div>
+      <div class="wrap visit__inner">
+        <p class="eyebrow">06 <span aria-hidden="true">—</span> Visit us</p>
+        <h2 class="visit__title" id="visit-title">The table is set.<br><em>The coffee is on.</em></h2>
+        <p class="visit__sub">Find your café, bring a friend, and stay a little longer. That’s the whole idea.</p>
+        <div class="visit__actions">
+          <a class="btn btn--gold" href="#locations">Find your café <span aria-hidden="true">→</span></a>
+          <a class="btn btn--ghost" href="mailto:info@coffeebean.pk">Write to us</a>
+        </div>
+        <div class="visit__contact">
+          <a href="mailto:info@coffeebean.pk">
+            <span>Email</span>
+            info@coffeebean.pk
+          </a>
+          <a href="tel:+923025455448">
+            <span>Call</span>
+            0302 5455448
+          </a>
+        </div>
+      </div>
+      <div class="visit__word" aria-hidden="true">1963</div>
+    </section>
+  </main>
+
+  <footer class="footer section--dark">
+    <div class="wrap">
+      <div class="footer__grid">
+        <div class="footer__brand">
+          <a class="brand brand--footer" href="#top" aria-label="Back to top">
+            <svg class="brand__mark" viewBox="0 0 48 48" aria-hidden="true">
+              <circle cx="24" cy="24" r="22" fill="none" stroke="currentColor" stroke-width="1.1"/>
+              <ellipse cx="24" cy="26" rx="8" ry="11.6" transform="rotate(-22 24 26)" fill="none" stroke="currentColor" stroke-width="1.1"/>
+              <path d="M18.6 34c3.7-2.7 5.3-6.3 5.2-10.6-.1-4.3 1.5-7.9 5.2-10.6" fill="none" stroke="currentColor" stroke-width="1.1"/>
+              <path d="M28.8 11.4c2.8-.4 5.1.6 6.8 2.9-2.6 1.5-5.1 1.4-7.4-.4" fill="none" stroke="currentColor" stroke-width="1.1"/>
+            </svg>
+            <span class="brand__name">
+              <span>The Coffee Bean <em>&amp; Tea Leaf</em></span>
+              <small>Pakistan</small>
+            </span>
+          </a>
+          <p class="footer__tag">Born in California.<br>Brewed in Pakistan.</p>
+        </div>
+
+        <nav class="footer__col" aria-label="Explore">
+          <h3>Explore</h3>
+          <a href="#story">Story</a>
+          <a href="#heritage">Heritage</a>
+          <a href="#menu">Menu</a>
+          <a href="#sourcing">Sourcing</a>
+          <a href="#locations">Locations</a>
+        </nav>
+
+        <div class="footer__col">
+          <h3>Visit</h3>
+          <a href="https://www.coffeebean.pk/store-locator/" target="_blank" rel="noopener">Official store locator ↗</a>
+          <a href="https://www.facebook.com/CoffeeBeanPakistan" target="_blank" rel="noopener">Facebook ↗</a>
+          <a href="https://www.coffeebean.pk/" target="_blank" rel="noopener">coffeebean.pk ↗</a>
+        </div>
+
+        <div class="footer__col">
+          <h3>Contact</h3>
+          <a href="mailto:info@coffeebean.pk">info@coffeebean.pk</a>
+          <a href="tel:+923025455448">0302 5455448</a>
+          <a class="footer__top" href="#top">Back to top <span aria-hidden="true">↑</span></a>
+        </div>
+      </div>
+
+      <div class="footer__bottom">
+        <p>© <span id="year">2026</span> The Coffee Bean &amp; Tea Leaf Pakistan.</p>
+        <p>Concept experience <span aria-hidden="true">·</span> Store details and hours sourced from coffeebean.pk.</p>
+      </div>
+    </div>
+  </footer>
+
+  <script src="app.js"></script>
+</body>
+</html>
